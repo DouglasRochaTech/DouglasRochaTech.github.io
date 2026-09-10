@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Douglas Rocha Vasco</title>
+    
+    <!-- Importando Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Importando FontAwesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Importando Fonte Inter do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Configurações adicionais de estilo -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #e5e7eb; /* Fundo cinza para destacar a página A4 */
+        }
+        
+        .a4-container {
+            /* Proporção aproximada de uma folha A4 */
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        /* Ajuste de estilo para as listas com marcadores */
+        .custom-list li {
+            position: relative;
+            padding-left: 1rem;
+            margin-bottom: 0.25rem;
+        }
+        .custom-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Estilo da barra de progresso em segmentos (como na imagem) */
+        .progress-segment {
+            flex: 1;
+            height: 6px;
+            margin-right: 4px;
+        }
+        .progress-segment:last-child {
+            margin-right: 0;
+        }
+        .progress-filled {
+            background-color: #ffffff;
+        }
+        .progress-empty {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="py-8 px-4 sm:px-8 text-gray-800">
+
+    <main class="a4-container bg-white shadow-2xl flex flex-col md:flex-row overflow-hidden min-h-[1100px]">
+        
+        <!-- ========================================== -->
+        <!-- BARRA LATERAL ESQUERDA (Fundo Verde Escuro) -->
+        <!-- ========================================== -->
+        <aside class="bg-[#1a5a43] text-white w-full md:w-[35%] flex flex-col">
+            
+            <!-- Foto de Perfil -->
+            <!-- Usando um placeholder cinza que remete à imagem de um homem como solicitado -->
+            <div class="w-full">
+                <!--<img src="https://placehold.co/400x400/9ca3af/ffffff?text=Foto+de+Perfil" alt="Foto de Douglas Rocha Vasco" class="w-full aspect-square object-cover">-->
+            </div>
+
+            <div class="p-6 flex flex-col gap-6">
+                
+                <section>
+                    <hr class="border-t border-white mb-2 opacity-80">
+                    <h2 class="font-bold text-sm uppercase tracking-wider mb-3">Contato</h2>
+                    <ul class="flex flex-col gap-3 text-sm">
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone w-4 text-center"></i>
+                            <span>(61) 98464-9488</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-paper-plane w-4 text-center"></i>
+                            <span>douglas.rocha.tech@gmail.com</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-link w-4 text-center"></i>
+                            <a href="https://www.linkedin.com/in/douglas-rocha-vasco-409738251/" class="hover:underline break-all">linkedin.com/in/douglas-rocha-vasco-409738251/</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <hr class="border-t border-white mb-2 opacity-80">
+                    <h2 class="font-bold text-sm uppercase tracking-wider mb-3">Habilidades e<br>Competências</h2>
+                    <ul class="custom-list text-sm space-y-2 font-light text-gray-100">
+                        <li>Experiência com linguagens de programação (C#, Python, JavaScript, Java, PHP);</li>
+                        <!--<li>Conhecimento de segurança informática (Cisco, Intel McAfee, Extreme);</li> -->
+                        <li>Conhecimento de bases de dados (SQL, Python, Java);</li>
+                        <!--<li>Criatividade e inovação;</li>-->
+                        <li>Capacidade de comunicação;</li>
+                        <li>Trabalho em equipe.</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <hr class="border-t border-white mb-2 opacity-80">
+                    <h2 class="font-bold text-sm uppercase tracking-wider mb-3">Idiomas</h2>
+                    
+                    <!-- Inglês -->
+                    <div class="mb-4 text-sm font-semibold">
+                        <div class="flex justify-between items-end mb-1">
+                            <span>Inglês fluente</span>
+                            <!--<span class="text-xs">C1</span>-->
+                        </div>
+                        <div class="flex w-full mt-1">
+                            <!-- 80% preenchido (4 de 5 segmentos) -->
+                            <!--<div class="progress-segment progress-filled"></div>-->
+                            <!--<div class="progress-segment progress-filled"></div>-->
+                            <!--<div class="progress-segment progress-filled"></div>-->
+                            <!--<div class="progress-segment progress-filled"></div>-->
+                            <!--<div class="progress-segment progress-empty"></div>-->
+                        </div>
+                        <!--<div class="text-xs font-light text-gray-200 mt-1">Avançado</div>-->
+                    </div>
+
+                    <!-- Alemão -->
+                    <!-- <div class="text-sm font-semibold">
+                        <div class="flex justify-between items-end mb-1">
+                            <span>Alemão básico;</span>
+                            <span class="text-xs">A2</span>
+                        </div>
+                        <div class="flex w-full mt-1">-->
+                            <!-- ~30% preenchido (2 de 5 segmentos para ficar visualmente parecido) -->
+                            <!-- <div class="progress-segment progress-filled"></div>
+                            <div class="progress-segment progress-empty"></div>
+                            <div class="progress-segment progress-empty"></div>
+                            <div class="progress-segment progress-empty"></div>
+                            <div class="progress-segment progress-empty"></div>
+                        </div>
+                        <div class="text-xs font-light text-gray-200 mt-1">Básico</div>
+                    </div>-->
+                </section>
+
+                <!--<section>
+                    <hr class="border-t border-white mb-2 opacity-80">
+                    <h2 class="font-bold text-sm uppercase tracking-wider mb-3">Informações Adicionais</h2>
+                    <ul class="custom-list text-sm space-y-2 font-light text-gray-100">
+                        <li>Membro da Sociedade Brasileira de Computação;</li>
+                        <li>Organização de eventos trimestrais do grupo Javanow de desenvolvedores em São Paulo;</li>
+                        <li>Interesse na indústria de videogames.</li>
+                    </ul>
+                </section>-->
+
+            </div>
+        </aside>
+
+        <!-- ========================================== -->
+        <!-- CONTEÚDO PRINCIPAL (Fundo Branco, Direita) -->
+        <!-- ========================================== -->
+        <main class="w-full md:w-[65%] p-8 sm:p-10 flex flex-col bg-white">
+            
+            <header class="mb-6">
+                <h1 class="text-4xl sm:text-5xl font-black text-[#1a5a43] tracking-tight leading-none mb-4">
+                    Douglas Rocha Vasco
+                </h1>
+                <hr class="border-t-[6px] border-black">
+            </header>
+
+            <section class="mb-6">
+                <h2 class="font-bold text-lg text-[#1a5a43] uppercase mb-1 tracking-wide">Resumo</h2>
+                <hr class="border-t border-gray-300 mb-3">
+                <p class="text-[0.9rem] leading-relaxed text-gray-800">
+                    Programador dinâmico e dedicado com conhecimento de C#, Python, JavaScript, Java e PHP. Experiência em programação para jogos.
+                </p>
+            </section>
+
+            <section class="mb-6">
+                <h2 class="font-bold text-lg text-[#1a5a43] uppercase mb-1 tracking-wide">Experiência Profissional</h2>
+                <hr class="border-t border-gray-300 mb-4">
+                
+                <!-- Emprego 1 -->
+                <div class="mb-5">
+                    <div class="flex justify-between items-baseline mb-1">
+                        <h3 class="font-bold text-gray-900 text-[1rem]">Modelador e animador 3D</h3>
+                        <span class="text-sm font-medium text-gray-600">2010 - 2023</span>
+                    </div>
+                    <p class="text-sm text-gray-700 italic mb-2 font-medium">Harpa Game Studio - Brasília, DF</p>
+                    <ul class="custom-list text-[0.9rem] text-gray-800 space-y-1">
+                        <li>Modelei, texturizei, riguei e animei modelos 3D conforme as necessidades da empresa;</li>
+                    </ul>
+                </div>
+
+                <!-- Emprego 2 -->
+                <div>
+                    <div class="flex justify-between items-baseline mb-1">
+                        <h3 class="font-bold text-gray-900 text-[1rem]">Desenvolvedor de jogos</h3>
+                        <span class="text-sm font-medium text-gray-600">2016 - 03/2025</span>
+                    </div>
+                    <p class="text-sm text-gray-700 italic mb-2 font-medium">Brasília, DF</p>
+                    <ul class="custom-list text-[0.9rem] text-gray-800 space-y-1">
+                        <li>Desenvolvi jogos sozinho antes da ascensão das LLMs, trabalhando em todos os aspectos deles, da programação à apresentação audiovisual;</li>
+                        <li>Publiquei um deles na plataforma Steam (<a href="https://store.steampowered.com/app/2147890/Demolish_or_Die/" class="hover:underline break-all">https://store.steampowered.com/app/2147890/Demolish_or_Die/</a>);</li>
+                        <li>Atualizei o jogo com frequência, modificando-o de acordo com o feedback dos clientes;</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="mb-6">
+                <h2 class="font-bold text-lg text-[#1a5a43] uppercase mb-1 tracking-wide">Formação Acadêmica</h2>
+                <hr class="border-t border-gray-300 mb-3">
+                
+                <div>
+                    <p class="text-[0.9rem] text-gray-900">
+                        <span class="font-bold">Curso de Análise e Desenvolvimento de Sistemas em andamento.</span>
+                    </p>
+                    <p class="text-[0.9rem] text-gray-800">Senac - Brasília, DF</p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="font-bold text-lg text-[#1a5a43] uppercase mb-1 tracking-wide">Projetos Pessoais</h2>
+                <hr class="border-t border-gray-300 mb-3">
+                
+                <div class="mb-3">
+                    <p class="text-[0.9rem] text-gray-900 font-bold mb-1">Projeto LLM NPC - 2026 - 2026</p>
+                    <ul class="custom-list text-[0.9rem] text-gray-800">
+                        <li>Um jogo digital com a integração assíncrona de LLMs no motor de jogos em tempo real, ainda em desenvolvimento.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-3">
+                    <p class="text-[0.9rem] text-gray-900 font-bold mb-1">Demolish or Die - 2021 - 2023</p>
+                    <ul class="custom-list text-[0.9rem] text-gray-800">
+                        <li>Um jogo digital de ação em mundo aberto com ambientes completamente destrutíveis, sistemas de tráfego urbano, sistema de policiamento, veículos interativos. (<a href="https://store.steampowered.com/app/2147890/Demolish_or_Die/" class="hover:underline break-all">https://store.steampowered.com/app/2147890/Demolish_or_Die/</a>)</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="text-[0.9rem] text-gray-900 font-bold mb-1">Destruction Demo - 2015</p>
+                    <ul class="custom-list text-[0.9rem] text-gray-800">
+                        <li>Uma demonstração técnica de um sistema de destruição para jogos que desenvolvi no Blender Game Engine. (<a href="https://www.youtube.com/watch?v=LCbhrVW-g9Y" class="hover:underline break-all">https://www.youtube.com/watch?v=LCbhrVW-g9Y</a>)</li>
+                    </ul>
+                </div>
+            </section>
+
+        </main>
+    </main>
+
+</body>
+</html>
